@@ -1,3 +1,4 @@
+
 import React from "react";
 import { cn } from "@/lib/utils";
 
@@ -17,13 +18,13 @@ export const PortfolioButton: React.FC<PortfolioButtonProps> = ({
   onClick,
 }) => {
   const baseStyles =
-    "flex items-center gap-2 overflow-hidden text-base font-semibold px-4 py-2 rounded-[200px]";
+    "flex items-center gap-2 overflow-hidden text-base font-semibold px-4 py-2 rounded-[200px] transition-colors";
 
   const variantStyles = {
-    primary: "bg-white text-[rgba(22,22,22,1)] justify-center",
-    secondary: "bg-[rgba(38,38,39,1)] text-white justify-center",
-    outline: "border border-[rgba(108,108,111,1)] border-solid text-white",
-    white: "bg-white text-[rgba(22,22,22,1)] justify-center",
+    primary: "bg-white text-[rgba(22,22,22,1)] justify-center hover:bg-gray-100",
+    secondary: "bg-[rgba(38,38,39,1)] text-white justify-center hover:bg-[rgba(48,48,49,1)]",
+    outline: "border border-[rgba(108,108,111,1)] border-solid text-white hover:bg-[rgba(48,48,49,1)]",
+    white: "bg-white text-[rgba(22,22,22,1)] justify-center hover:bg-gray-100",
   };
 
   return (
