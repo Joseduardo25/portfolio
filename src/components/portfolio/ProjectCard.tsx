@@ -1,3 +1,4 @@
+
 import React from "react";
 import PortfolioButton from "./PortfolioButton";
 
@@ -29,20 +30,21 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         <h3 className="text-2xl font-semibold leading-9">{title}</h3>
         <p className="text-base font-normal mt-2">{categories}</p>
       </div>
-      <PortfolioButton
-        variant="white"
-        className="mt-6"
-        icon={
-          <img
-            src={buttonIconUrl}
-            alt="Arrow"
-            className="aspect-[1] object-contain w-6 self-stretch shrink-0 my-auto"
-          />
-        }
-        onClick={onButtonClick}
-      >
-        {buttonText}
-      </PortfolioButton>
+      <div className="mt-6">
+        <PortfolioButton
+          variant="white"
+          icon={
+            <img
+              src={buttonIconUrl}
+              alt="Arrow"
+              className="aspect-[1] object-contain w-6 self-stretch shrink-0 my-auto"
+            />
+          }
+          onClick={onButtonClick}
+        >
+          {buttonText}
+        </PortfolioButton>
+      </div>
     </div>
   );
 };

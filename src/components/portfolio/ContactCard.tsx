@@ -1,3 +1,4 @@
+
 import React from "react";
 import Badge from "./Badge";
 import PortfolioButton from "./PortfolioButton";
@@ -28,13 +29,14 @@ export const ContactCard: React.FC<ContactCardProps> = ({
           </p>
         </div>
       </div>
-      <PortfolioButton
-        variant="outline"
-        className="mt-7"
-        onClick={onButtonClick}
-      >
-        {buttonText}
-      </PortfolioButton>
+      <div className="mt-7">
+        <PortfolioButton
+          variant="outline"
+          onClick={onButtonClick}
+        >
+          {buttonText}
+        </PortfolioButton>
+      </div>
     </div>
   );
 };
