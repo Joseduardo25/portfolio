@@ -1,3 +1,4 @@
+
 import React from "react";
 import PortfolioButton from "./PortfolioButton";
 
@@ -23,12 +24,14 @@ export const FigmaResourceCard: React.FC<FigmaResourceCardProps> = ({
         <div className="text-[rgba(181,181,181,1)] font-normal leading-6">
           {title}
         </div>
-        <PortfolioButton
-          variant="outline"
-          className="text-[rgba(106,106,108,1)] mt-4"
-        >
-          {buttonText}
-        </PortfolioButton>
+        <div className="mt-4">
+          <PortfolioButton
+            variant="outline"
+            className="text-[rgba(106,106,108,1)] opacity-70 cursor-default pointer-events-none"
+          >
+            {buttonText}
+          </PortfolioButton>
+        </div>
       </div>
     </div>
   );
