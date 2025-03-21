@@ -20,7 +20,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   onButtonClick,
 }) => {
   return (
-    <div className="bg-[rgba(38,38,39,1)] flex min-w-60 flex-col items-stretch flex-1 shrink basis-[0%] p-6 rounded-[20px]">
+    <div className="bg-[rgba(38,38,39,1)] flex min-w-60 flex-col items-stretch flex-1 shrink basis-[0%] p-6 rounded-[20px] cursor-pointer">
       <img
         src={imageUrl}
         alt="Project"

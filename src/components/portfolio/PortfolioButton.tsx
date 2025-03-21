@@ -18,7 +18,7 @@ export const PortfolioButton: React.FC<PortfolioButtonProps> = ({
   onClick,
 }) => {
   const baseStyles =
-    "flex items-center gap-2 overflow-hidden text-base font-semibold px-4 py-2 rounded-[200px] transition-colors";
+    "flex items-center gap-2 overflow-hidden text-base font-semibold px-4 py-2 rounded-[200px] transition-colors cursor-pointer";
 
   const variantStyles = {
     primary: "bg-white text-[rgba(22,22,22,1)] justify-center hover:bg-gray-100",

@@ -10,24 +10,24 @@ import ProjectCard from "./ProjectCard";
 export const PortfolioSection: React.FC = () => {
   const socialLinks = [
     {
-      icon: "https://cdn.builder.io/api/v1/image/assets/04aca8dd9d7f417fadeff52fa29f8f19/c608126164d82bbbc7a28a22b87e9cf2120efb04?placeholderIfAbsent=true",
-      url: "#",
+      icon: "https://cdn.builder.io/api/v1/image/assets/04aca8dd9d7f417fadeff52fa29f8f19/b82efdccfe3cbef816a4b0c89e4c5db821421f13?placeholderIfAbsent=true",
+      url: "https://www.linkedin.com/in/ernestoq96/",
       label: "LinkedIn",
     },
     {
-      icon: "https://cdn.builder.io/api/v1/image/assets/04aca8dd9d7f417fadeff52fa29f8f19/b82efdccfe3cbef816a4b0c89e4c5db821421f13?placeholderIfAbsent=true",
-      url: "#",
+      icon: "https://cdn.builder.io/api/v1/image/assets/04aca8dd9d7f417fadeff52fa29f8f19/1870816c0c7a6e4c1b3f4ed9e736d4c139383fed?placeholderIfAbsent=true",
+      url: "https://x.com/Ernestoqdesign",
       label: "Twitter",
     },
     {
-      icon: "https://cdn.builder.io/api/v1/image/assets/04aca8dd9d7f417fadeff52fa29f8f19/1870816c0c7a6e4c1b3f4ed9e736d4c139383fed?placeholderIfAbsent=true",
-      url: "#",
-      label: "GitHub",
+      icon: "https://cdn.builder.io/api/v1/image/assets/04aca8dd9d7f417fadeff52fa29f8f19/c608126164d82bbbc7a28a22b87e9cf2120efb04?placeholderIfAbsent=true",
+      url: "https://dribbble.com/Ernestoq",
+      label: "Dribbble",
     },
   ];
 
   return (
-    <section className="bg-[rgba(22,22,22,1)] flex items-center gap-2.5 overflow-hidden px-[198px] py-[140px] max-md:px-5 max-md:py-[100px]">
+    <section className="bg-[rgba(22,22,22,1)] flex items-center gap-2.5 overflow-hidden px-[198px] py-[140px] max-xl:px-5 max-xl:py-[100px] justify-center">
       <div className="self-stretch min-w-60 w-[1044px] my-auto max-md:max-w-full">
         <div className="w-full max-md:max-w-full">
           <header className="w-full text-2xl font-semibold leading-none max-md:max-w-full">
@@ -35,10 +35,10 @@ export const PortfolioSection: React.FC = () => {
               👋{" "}
             </div>
             <div className="text-[rgba(181,181,181,1)] mt-3 max-md:max-w-full">
-              Hey! It's Ernesto
+              Hey! I'm Ernesto,
             </div>
             <h1 className="text-white mt-3 max-md:max-w-full">
-              I'm a Perú based Product & Experience Designer.
+              a Product & Experience Designer based in Perú.
             </h1>
           </header>
 
@@ -83,8 +83,11 @@ export const PortfolioSection: React.FC = () => {
               <div className="flex w-full gap-5 flex-wrap mt-5 max-md:max-w-full">
                 <ContactCard
                   title="Have a project in mind?"
-                  description="Let's get in touch and work on your next project"
+                  description="Let's connect and collaborate to bring it to life!"
                   buttonText="Get in touch!"
+                  onButtonClick={() => {
+                    window.location.href = "https://www.linkedin.com/in/ernestoq96"
+                  }}
                 />
                 <LocationCard
                   iconUrl="https://cdn.builder.io/api/v1/image/assets/04aca8dd9d7f417fadeff52fa29f8f19/bbe0d735891371ecac1dd145bf4df62e9ab1b4b5?placeholderIfAbsent=true"
@@ -114,6 +117,10 @@ export const PortfolioSection: React.FC = () => {
             categories="Product Design · UX Design · Design System"
             buttonText="View project"
             buttonIconUrl="https://cdn.builder.io/api/v1/image/assets/04aca8dd9d7f417fadeff52fa29f8f19/18230f4baa58f0f7fe36f2e0bbda1df4f2c56ac3?placeholderIfAbsent=true"
+            onButtonClick={() => {
+              // redirect to /work/fluyez.html
+              window.location.href = "/work/fluyez.html"
+            }}
           />
           <ProjectCard
             imageUrl="https://cdn.builder.io/api/v1/image/assets/04aca8dd9d7f417fadeff52fa29f8f19/a574776896d5b84143ded2d67d5767ea39e5e5d3?placeholderIfAbsent=true"
@@ -128,6 +135,9 @@ export const PortfolioSection: React.FC = () => {
             categories="Product Design · UX Design · Design System"
             buttonText="View project"
             buttonIconUrl="https://cdn.builder.io/api/v1/image/assets/04aca8dd9d7f417fadeff52fa29f8f19/18230f4baa58f0f7fe36f2e0bbda1df4f2c56ac3?placeholderIfAbsent=true"
+            onButtonClick={() => {
+              window.location.href = "/work/culqi.html"
+            }}
           />
         </div>
       </div>
