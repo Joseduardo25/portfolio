@@ -32,7 +32,7 @@ export const PortfolioButton: React.FC<PortfolioButtonProps> = ({
       className={cn(baseStyles, variantStyles[variant], className)}
       onClick={onClick}
     >
-      <span className="self-stretch my-auto">{children}</span>
+      <span className="self-stretch my-auto font-montserrat">{children}</span>
       {icon && icon}
     </button>
   );

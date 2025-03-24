@@ -41,7 +41,7 @@ export const Badge: React.FC<BadgeProps> = ({ status, className }) => {
           config.indicatorColor,
         )}
       />
-      <div className="self-stretch my-auto">{config.label}</div>
+      <div className="self-stretch my-auto font-dmSans">{config.label}</div>
     </div>
   );
 };

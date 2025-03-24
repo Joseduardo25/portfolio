@@ -34,7 +34,7 @@ export const PortfolioSection: React.FC = () => {
             <div className="text-black text-[28px] font-medium leading-none max-md:max-w-full">
               👋{" "}
             </div>
-            <div className="text-[rgba(181,181,181,1)] mt-3 max-md:max-w-full">
+            <div className="text-[rgba(181,181,181,1)] mt-3 max-md:max-w-full font-montserrat">
               Hey! I'm Ernesto,
             </div>
             <h1 className="text-white mt-3 max-md:max-w-full">
@@ -49,10 +49,10 @@ export const PortfolioSection: React.FC = () => {
                 content={
                   <>
                     I specialize in{" "}
-                    <span className="text-white">Design Systems</span>, focusing
+                    <span className="text-white font-dmSans">Design Systems</span>, focusing
                     on building scalable, user-centered experiences. For the
                     past six years,{" "}
-                    <span className="text-white">
+                    <span className="text-white font-dmSans">
                       I've helped teams create cohesive design ecosystems that
                       enable developers and designers to work faster and more
                       efficiently.
@@ -70,8 +70,8 @@ export const PortfolioSection: React.FC = () => {
                   imageUrl="https://cdn.builder.io/api/v1/image/assets/04aca8dd9d7f417fadeff52fa29f8f19/3647d45bcb4305bc192286e18afe87851bc994a8?placeholderIfAbsent=true"
                   title={
                     <>
-                      <span className="font-medium">Figma Resource: </span>
-                      <span className="font-medium text-white">
+                      <span className="font-medium font-dmSans">Figma Resource: </span>
+                      <span className="font-medium text-white font-dmSans">
                         A seamless way to start any project with pre-built UI.
                       </span>
                     </>
@@ -99,7 +99,7 @@ export const PortfolioSection: React.FC = () => {
           </div>
         </div>
 
-        <div className="bg-[rgba(38,38,39,1)] w-full text-xl text-[rgba(106,106,108,1)] font-semibold text-center leading-[1.4] mt-5 px-5 py-3 rounded-[40px] max-md:max-w-full">
+        <div className="bg-[rgba(38,38,39,1)] w-full text-xl text-[rgba(106,106,108,1)] font-semibold text-center leading-[1.4] mt-5 px-5 py-3 rounded-[40px] max-md:max-w-full font-montserrat">
           Selected projects
         </div>
 
@@ -109,7 +109,7 @@ export const PortfolioSection: React.FC = () => {
             title={
               <>
                 Fluyez -{" "}
-                <span className="text-white">
+                <span className="text-white font-montserrat">
                   A Unified Design System For a Multi-Product Crypto Exchange
                 </span>
               </>
@@ -126,8 +126,8 @@ export const PortfolioSection: React.FC = () => {
             imageUrl="https://cdn.builder.io/api/v1/image/assets/04aca8dd9d7f417fadeff52fa29f8f19/a574776896d5b84143ded2d67d5767ea39e5e5d3?placeholderIfAbsent=true"
             title={
               <>
-                <span className="text-[rgba(181,181,181,1)]">Culqi - </span>
-                <span className="text-white">
+                <span className="text-[rgba(181,181,181,1)] font-montserrat">Culqi - </span>
+                <span className="text-white font-montserrat">
                   An omni channel platform for digital payments management
                 </span>
               </>

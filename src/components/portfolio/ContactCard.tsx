@@ -21,10 +21,10 @@ export const ContactCard: React.FC<ContactCardProps> = ({
       <div className="flex w-full flex-col items-stretch">
         <Badge status="available" />
         <div className="w-full mt-4">
-          <h3 className="text-white text-xl font-semibold leading-[1.4]">
+          <h3 className="text-white text-xl font-semibold leading-[1.4] font-montserrat">
             {title}
           </h3>
-          <p className="text-[rgba(181,181,181,1)] text-base font-medium mt-2">
+          <p className="text-[rgba(181,181,181,1)] text-base font-medium mt-2 font-dmSans">
             {description}
           </p>
         </div>

@@ -42,11 +42,11 @@ export const LocationCard: React.FC<LocationCardProps> = ({
         <div>{timezone}</div>
       </div>
       <div className="text-white text-2xl font-medium leading-9 mt-[26px] word-spacing-wider">
-        <span className=" word-spacing-wide font-semibold text-[rgba(181,181,181,1)]">
+        <span className=" word-spacing-wide font-semibold text-[rgba(181,181,181,1)] font-montserrat">
           Based in{" "}
         </span>
         {windowWidth > 938 ? <br/> : ''}
-        <span className="word-spacing-wider font-semibold">{location}</span>
+        <span className="word-spacing-wider font-semibold font-montserrat">{location}</span>
         <div></div>
       </div>
     </div>

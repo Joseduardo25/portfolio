@@ -27,8 +27,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         className="aspect-[1.45] object-contain w-full rounded-2xl"
       />
       <div className="w-full text-[rgba(181,181,181,1)] mt-6">
-        <h3 className="text-2xl font-semibold leading-9">{title}</h3>
-        <p className="text-base font-normal mt-2">{categories}</p>
+        <h3 className="text-2xl font-semibold leading-9 font-montserrat">{title}</h3>
+        <p className="text-base font-normal mt-2 font-dmSans">{categories}</p>
       </div>
       <div className="mt-6">
         <PortfolioButton

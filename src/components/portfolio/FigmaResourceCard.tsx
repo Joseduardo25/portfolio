@@ -22,13 +22,13 @@ export const FigmaResourceCard: React.FC<FigmaResourceCardProps> = ({
         className="w-full h-full object-cover"
       />
       <div className="flex w-[272px] max-w-full flex-col items-stretch mt-4">
-        <div className="text-[rgba(181,181,181,1)] font-normal leading-6">
+        <div className="text-[rgba(181,181,181,1)] font-normal leading-6 font-dmSans">
           {title}
         </div>
         <div className="mt-4">
           <PortfolioButton
             variant="outline"
-            className="text-[rgba(106,106,108,1)] opacity-70 cursor-default pointer-events-none"
+            className="text-[rgba(106,106,108,1)] opacity-70 cursor-default pointer-events-none font-montserrat"
           >
             {buttonText}
           </PortfolioButton>

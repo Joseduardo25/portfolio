@@ -13,7 +13,7 @@ export const AboutCard: React.FC<AboutCardProps> = ({ imageUrl, content }) => {
         alt="About me"
         className="aspect-[1.93] object-contain w-full rounded-xl"
       />
-      <div className="mt-6">{content}</div>
+      <div className="mt-6 font-dmSans">{content}</div>
     </div>
   );
 };
