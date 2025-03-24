@@ -37,7 +37,7 @@ export const PortfolioSection: React.FC = () => {
             <div className="text-[rgba(181,181,181,1)] mt-3 max-md:max-w-full font-montserrat">
               Hey! I'm Ernesto,
             </div>
-            <h1 className="text-white mt-3 max-md:max-w-full">
+            <h1 className="text-white mt-3 max-md:max-w-full font-montserrat">
               a Product & Experience Designer based in Perú.
             </h1>
           </header>
@@ -90,7 +90,7 @@ export const PortfolioSection: React.FC = () => {
                   }}
                 />
                 <LocationCard
-                  iconUrl="https://cdn.builder.io/api/v1/image/assets/04aca8dd9d7f417fadeff52fa29f8f19/bbe0d735891371ecac1dd145bf4df62e9ab1b4b5?placeholderIfAbsent=true"
+                  iconUrl="/assets/images/map.png"
                   timezone="GMT-5"
                   location="Lima, Perú"
                 />

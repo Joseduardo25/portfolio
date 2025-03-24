@@ -28,11 +28,9 @@ export const LocationCard: React.FC<LocationCardProps> = ({
   const heightContainer = windowWidth < 938 ? "h-full" : "min-h-[212px]"
 
   return (
-    <div className={(widthContainer) + " " + (heightContainer) + " " + "bg-[rgba(38,38,39,1)] p-6 rounded-[20px]"}>
-      <div className="container">
-    <div className="ring ping"></div>
-    <a href="#" className="link-mynor"></a>
-</div>
+    <div className={(widthContainer) + " " + (heightContainer) + " " + "bg-[rgba(38,38,39,1)] p-6 rounded-[20px] relative"}>
+      <span className="pulse"></span>
+
       <div className="flex w-full gap-[26px] text-lg text-[rgba(110,110,113,1)] font-bold whitespace-nowrap text-right leading-none justify-between">
         <img
           src={iconUrl}

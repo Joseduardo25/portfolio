@@ -1,73 +1,31 @@
-.container {
-  position: absolute; /* Contenedor relativo para posicionar elementos hijos de manera absoluta */
-  display: inline-block; /* Ajusta el contenedor al tamaño de la imagen */
+.pulse {
+  position: absolute;
+  top: 58px;
+  left: 35px;
+  z-index: 100;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #21c65f; 
+  cursor: pointer;
+  box-shadow: 0 0 0 0 #166534; 
+  animation: pulse-animation 3s infinite; 
 }
 
-.ring {
-  position: absolute; /* Posición absoluta para no ocupar espacio en el flujo del documento */
-  border-radius: 55px;
-  padding: 25px;
-  transform: scale(.25);
-  -webkit-transform: scale(.25);
-  -webkit-transform-origin: center;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-}
-
-.ping {
-  top: 12px; /* Ajusta la posición vertical */
-  left: -12px; /* Ajusta la posición horizontal */
-  border: solid #21c65f 3px;
-  animation-duration: 3s;
-  -webkit-animation-duration: 3s;
-  animation-name: ping;
-  -webkit-animation-name: ping;
-}
-
-@keyframes ping {
-  from {
-      transform: scale(.25);
-      -webkit-transform: scale(.25);
-      opacity: 1;
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.4);
+    opacity: 1;
   }
-  to {
-      transform: scale(1);
-      -webkit-transform: scale(1);
-      opacity: 0;
+  50% {
+    box-shadow: 0 0 0 10px rgba(0, 255, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 0, 0);
   }
 }
 
-.link-mynor{
-  /* z-index: 100; */
-  top: 35px;
-  left: 12px;
-  width: 8px;
-  height: 8px;
-  position: absolute; /* Posición absoluta para no ocupar espacio */
-  text-decoration: none;
-  background-color: #21c65f;
-  border-radius: 55px;
-  border: dotted 3px;
-  animation-duration: .75s;
-  -webkit-animation-duration: .75s;
-  animation-name: breathe;
-  -webkit-animation-name: breathe;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  animation-direction: alternate;
-  -webkit-animation-direction: alternate;
-  animation-delay: 0s;
-  -webkit-animation-delay: 0s;
-}
-
-
-@keyframes breathe {
-  from {
-      border-color: #21c65f;
-      background-color: #21c65f;
-  }
-  to {
-      border-color: #166534;
-      background-color: #166534;
-  }
+.pulse:hover {
+  animation: none;
+  background: #00FF00;
 }
