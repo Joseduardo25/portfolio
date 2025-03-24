@@ -4,7 +4,7 @@ import SocialLinks from "./SocialLinks";
 import ProjectShowcase from "./ProjectShowcase";
 import FigmaResourceCard from "./FigmaResourceCard";
 import ContactCard from "./ContactCard";
-import LocationCard from "./LocationCard";
+import LocationCard from "./LocationCard/LocationCard";
 import ProjectCard from "./ProjectCard";
 
 export const PortfolioSection: React.FC = () => {

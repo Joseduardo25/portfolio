@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"], 
+        dmSans: ["DM Sans", "sans-serif"],
+      },
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',

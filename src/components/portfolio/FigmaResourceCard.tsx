@@ -18,7 +18,8 @@ export const FigmaResourceCard: React.FC<FigmaResourceCardProps> = ({
       <img
         src={imageUrl}
         alt="Figma resource"
-        className="aspect-[2.58] object-contain w-80 max-w-full"
+        // className="aspect-[2.58] object-contain w-80 max-w-full"
+        className="w-full h-full object-cover"
       />
       <div className="flex w-[272px] max-w-full flex-col items-stretch mt-4">
         <div className="text-[rgba(181,181,181,1)] font-normal leading-6">

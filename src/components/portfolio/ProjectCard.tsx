@@ -20,7 +20,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   onButtonClick,
 }) => {
   return (
-    <div className="bg-[rgba(38,38,39,1)] flex min-w-60 flex-col items-stretch flex-1 shrink basis-[0%] p-6 rounded-[20px] cursor-pointer">
+    <div className="bg-[rgba(38,38,39,1)] flex min-w-60 flex-col items-stretch flex-1 shrink basis-[0%] p-6 rounded-[20px]">
       <img
         src={imageUrl}
         alt="Project"
@@ -37,7 +37,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             <img
               src={buttonIconUrl}
               alt="Arrow"
-              className="aspect-[1] object-contain w-6 self-stretch shrink-0 my-auto"
+              className="aspect-[1] object-contain w-6 self-stretch shrink-0 my-auto cursor-pointer"
             />
           }
           onClick={onButtonClick}
