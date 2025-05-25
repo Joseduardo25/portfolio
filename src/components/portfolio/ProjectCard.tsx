@@ -24,6 +24,14 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       <img
         src={imageUrl}
         alt="Project"
+        style={{
+          aspectRatio: "50 / 42",
+          width: "100%",
+          height: "auto",
+          objectFit: "cover",
+          display: "block",
+          objectPosition: "top"
+        }}
         className="aspect-[1.45] object-contain w-full rounded-2xl"
       />
       <div className="w-full text-[rgba(181,181,181,1)] mt-6">

@@ -31,6 +31,14 @@ export const FigmaResourceCard: React.FC<FigmaResourceCardProps> = ({
   return (
     <div className="bg-[rgba(38,38,39,1)] flex min-w-60 min-h-[268px] flex-col overflow-hidden items-center flex-1 shrink basis-16 rounded-[20px] border-[rgba(38,38,39,1)] border-solid border-4">
       <img
+      style={{
+        aspectRatio: "80 / 31",
+        width: "100%",
+        height: "auto",
+        objectFit: "cover",
+        display: "block",
+        objectPosition: "center 12%"
+      }}
         src={imageUrl}
         alt="Figma resource"
         // className="aspect-[2.58] object-contain w-80 max-w-full"
